@@ -1,1 +1,16 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 600px;
+  height: 700px;
+  background: white;
+  border-radius: 20px;
+  padding: 16px 8px;
+  margin: 5px;
+}
+
+body {
+  display: flex;
+  padding-top: 20%;
+  justify-content: center;
+
+  background-color: green;
+}
