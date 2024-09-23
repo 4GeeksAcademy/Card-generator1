@@ -1,4 +1,3 @@
-/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
@@ -6,8 +5,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  // Escribe tu código aquí
 
   let NumberCard = document.querySelector("#Number");
   let randomItem = document.querySelector("#figura1");
@@ -34,39 +32,31 @@ function generateNumber() {
 
   switch (random) {
     case 1:
-      random = "A";
-      break;
+      return "A";
     case 11:
-      random = "J";
-      break;
+      return "J";
     case 12:
-      random = "Q";
-      break;
+      return "Q";
     case 13:
-      random = "K";
-      break;
+      return "K";
+    default:
+      return random;
   }
-
-  return random;
 }
 
 function itemGenerate() {
-  let item = Math.floor(Math.random() * 3);
+  let item = Math.floor(Math.random() * 4); // Cambiado de 3 a 4 para incluir el 3
 
   switch (item) {
     case 0:
-      item = "♣";
-      break;
+      return "♣";
     case 1:
-      item = "♠";
-      break;
+      return "♠";
     case 2:
-      item = "♥";
-      break;
+      return "♥";
     case 3:
-      item = "♦";
-      break;
+      return "♦";
+    default:
+      return "♣"; // Valor por defecto
   }
-
-  return item;
 }
