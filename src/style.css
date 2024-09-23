@@ -1,20 +1,18 @@
-/* Estilos para la carta */
 .card {
   width: 400px;
   height: 600px;
   background: white;
   border-radius: 30px;
-  padding: 0; /* Mantener sin padding */
+  padding: 0;
   margin: auto;
   border: 4px solid black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Para separar los elementos verticalmente */
+  justify-content: space-between;
   position: relative;
 }
 
-/* Estilos para el cuerpo de la página */
 body {
   display: flex;
   justify-content: center;
@@ -24,34 +22,30 @@ body {
   margin: 0;
 }
 
-/* Icono en la esquina superior izquierda */
 #figura1 {
   font-size: 120px;
-  margin-top: -20px; /* Subir el ícono hacia el borde superior */
-  margin-left: 10px; /* Ajustar el margen izquierdo */
-  align-self: flex-start; /* Mantener en la parte superior */
+  margin-top: -20px;
+  margin-left: 10px;
+  align-self: flex-start;
 }
 
-/* Icono en la esquina inferior derecha, volteado */
 #figura2 {
   font-size: 120px;
-  transform: scaleY(-1); /* Voltear el ícono */
-  margin-bottom: -20px; /* Bajar el ícono hacia el borde inferior */
-  margin-right: 10px; /* Ajustar el margen derecho */
-  align-self: flex-end; /* Mantener en la parte inferior */
+  transform: scaleY(-1);
+  margin-bottom: -20px;
+  margin-right: 10px;
+  align-self: flex-end;
 }
 
-/* Estilos para el número centrado */
 #Number {
   font-size: 180px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1; /* Ocupar el espacio vertical restante */
+  flex-grow: 1;
 }
 
-/* Clase para cambiar color si es corazón o diamante */
 .red {
   color: red;
 }
